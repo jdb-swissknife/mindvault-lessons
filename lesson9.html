@@ -1,0 +1,133 @@
+<!-- Lesson 9: Follow-Up Coach (partial, loaded into index.html) -->
+
+<div class="lesson-header">
+    <div class="lesson-number">Lesson 9</div>
+    <div class="lesson-title">Follow-Up Coach</div>
+    <div class="lesson-subtitle">Draft better replies and next steps without sounding robotic</div>
+</div>
+
+<div class="section">
+    <h2>The Problem With Follow-Up</h2>
+    <p>Follow-up fails in two common ways. You wait too long, or you send a message that sounds generic.</p>
+    <p>Your agent can help with both, but only if you give it the context from Lesson 8.</p>
+    <p>Today you are building a <strong>Follow-Up Coach</strong> that turns captured opportunities into useful messages.</p>
+</div>
+
+<div class="section">
+    <h2>The Tool You Are Building</h2>
+    <p>Your Follow-Up Coach should help you decide what to say, when to say it, and what outcome you want.</p>
+    <ol>
+        <li><strong>Intent</strong> -- why you are reaching out</li>
+        <li><strong>Context</strong> -- what they said or needed</li>
+        <li><strong>Tone</strong> -- friendly, direct, warm, professional</li>
+        <li><strong>Ask</strong> -- the clear next step</li>
+        <li><strong>Version</strong> -- text, email, LinkedIn, or call notes</li>
+    </ol>
+</div>
+
+<div class="section">
+    <div class="step-badge">Step 1</div>
+    <h2>Install the Follow-Up Coach Prompt</h2>
+    <p>Copy this into your agent.</p>
+
+    <div class="prompt-block"><button class="copy-btn">Copy</button>Act as my Follow-Up Coach.
+
+When I paste an opportunity, help me create a follow-up message.
+Ask me for any missing details, then draft:
+1. A short text message
+2. A slightly longer email
+3. A call note version
+4. The clear next step I am asking for
+5. One softer version if the first draft feels too direct
+
+Keep the message human. No hype. No fake urgency. No corporate language.</div>
+</div>
+
+<div class="section">
+    <div class="step-badge">Step 2</div>
+    <h2>Use One Captured Opportunity</h2>
+    <p>Paste the opportunity you captured in Lesson 8. If you skipped Lesson 8, use the template below.</p>
+
+    <div class="prompt-block"><button class="copy-btn">Copy</button>Use this opportunity and draft a follow-up.
+
+Person or company: [name]
+Context: [how we connected]
+Need or interest: [what they care about]
+Important detail: [detail to mention]
+Desired next step: [call, reply, intro, proposal, meeting, reminder]
+Tone: [friendly, direct, warm, professional]
+Channel: [text, email, LinkedIn, phone note]
+
+Draft the message and explain why it works.</div>
+</div>
+
+<div class="section">
+    <div class="step-badge">Step 3</div>
+    <h2>Pick the Right Follow-Up Type</h2>
+    <table class="styled-table">
+        <tr><th>Situation</th><th>Best Follow-Up</th><th>Why</th></tr>
+        <tr><td>They asked for information</td><td>Send the answer plus one next step</td><td>Removes friction</td></tr>
+        <tr><td>They went quiet</td><td>Short check-in with an easy reply</td><td>Lowers pressure</td></tr>
+        <tr><td>You owe them something</td><td>Deliver first, then ask</td><td>Builds trust</td></tr>
+        <tr><td>They need time</td><td>Permission-based reminder</td><td>Respects timing</td></tr>
+        <tr><td>You are unsure</td><td>Ask for a simple yes or no</td><td>Creates clarity</td></tr>
+    </table>
+</div>
+
+<div class="section">
+    <div class="step-badge">Step 4</div>
+    <h2>Make It Sound Like You</h2>
+    <p>The first draft is rarely the final draft. Make your agent learn your voice.</p>
+
+    <div class="prompt-block"><button class="copy-btn">Copy</button>Rewrite this follow-up in my voice.
+
+Rules:
+- Keep it short
+- Make it sound like a real person
+- Remove hype
+- Remove stiff corporate phrasing
+- Keep the next step clear
+- Give me 3 versions: casual, direct, and warm
+
+Message to rewrite:
+[paste message]</div>
+</div>
+
+<div class="section">
+    <h2>What's Happening Behind the Scenes</h2>
+    <p>You are moving from "write this for me" to a repeatable communication workflow.</p>
+    <table class="styled-table">
+        <tr><th>Bad Use</th><th>Better Use</th></tr>
+        <tr><td>Write a follow-up</td><td>Use this context, goal, tone, and next step</td></tr>
+        <tr><td>Make it professional</td><td>Make it clear, human, and specific</td></tr>
+        <tr><td>Say more</td><td>Say only what helps the person act</td></tr>
+    </table>
+</div>
+
+<div class="section">
+    <div class="step-badge">Step 5</div>
+    <h2>Your Assignment</h2>
+    <div class="callout">
+        <strong>Your to-do list:</strong><br>
+        1. Pick one real opportunity<br>
+        2. Draft a follow-up using the coach prompt<br>
+        3. Ask for three versions<br>
+        4. Pick one and edit it yourself<br>
+        5. Save the final message and next step
+    </div>
+</div>
+
+<div class="section">
+    <h2>The Bigger Picture</h2>
+    <p>Good follow-up is not pressure. It is clarity. Your agent helps you keep promises, make next steps visible, and sound more like yourself.</p>
+    <div class="callout"><strong>The real takeaway:</strong> Follow-up works best when it is specific, timely, and easy to answer.</div>
+    <p>Coming up next: you will build a decision log so important choices stop floating around in chat.</p>
+</div>
+
+<div class="bottom-nav">
+    <button class="btn btn-secondary" onclick="openLesson(8)">&larr; Lesson 8</button>
+    <div style="display:flex; gap:10px; align-items:center;">
+        <button class="btn btn-success" id="completeBtn" onclick="completeCurrentLesson()">Mark Complete</button>
+        <button class="btn btn-primary" onclick="openLesson(10)">Lesson 10 &rarr;</button>
+    </div>
+</div>

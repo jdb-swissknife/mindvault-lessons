@@ -7,7 +7,7 @@ This repo intentionally ships the restored Agent Quest / lesson experience as pl
 Routes:
 - / -> Agent Quest overview
 - /quest.html -> quest board
-- /lesson1.html through /lesson6.html
+- /lesson1.html through /lesson11.html
 - /lesson18.html
 - /privacy.html
 

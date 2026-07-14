@@ -1,0 +1,134 @@
+<!-- Lesson 10: Decision Log (partial, loaded into index.html) -->
+
+<div class="lesson-header">
+    <div class="lesson-number">Lesson 10</div>
+    <div class="lesson-title">Decision Log</div>
+    <div class="lesson-subtitle">Stop losing the why behind important choices</div>
+</div>
+
+<div class="section">
+    <h2>The Problem With Decisions in Chat</h2>
+    <p>Agents are great for thinking through options. But if the final decision stays buried in a long conversation, it is hard to find later.</p>
+    <p>You might remember what you chose, but forget why you chose it.</p>
+    <p>Today you are building a <strong>Decision Log</strong> that captures the choice, the reason, the tradeoff, and the next review point.</p>
+</div>
+
+<div class="section">
+    <h2>The Tool You Are Building</h2>
+    <p>Your Decision Log helps with business choices, personal planning, purchases, projects, hiring, offers, content direction, and strategy.</p>
+    <ol>
+        <li><strong>Decision</strong> -- what you chose</li>
+        <li><strong>Options</strong> -- what else you considered</li>
+        <li><strong>Reason</strong> -- why this choice won</li>
+        <li><strong>Tradeoff</strong> -- what you are accepting</li>
+        <li><strong>Review date</strong> -- when to revisit it</li>
+    </ol>
+</div>
+
+<div class="section">
+    <div class="step-badge">Step 1</div>
+    <h2>Create Your Decision Log Format</h2>
+    <p>Copy this into your agent.</p>
+
+    <div class="prompt-block"><button class="copy-btn">Copy</button>I want to build a Decision Log.
+
+When I say "log decision," ask me for:
+1. The decision I made
+2. The options I considered
+3. Why I chose this option
+4. The tradeoff or risk I am accepting
+5. The next action
+6. The date I should review this decision
+
+Then summarize it in a clear decision log entry.</div>
+</div>
+
+<div class="section">
+    <div class="step-badge">Step 2</div>
+    <h2>Log One Real Decision</h2>
+    <p>Pick something real but not overwhelming. Examples: which offer to focus on, which habit to build, which tool to use, which project to pause.</p>
+
+    <div class="prompt-block"><button class="copy-btn">Copy</button>Log decision.
+
+Decision:
+[what I chose]
+
+Options considered:
+[option A, option B, option C]
+
+Reason:
+[why this choice makes sense]
+
+Tradeoff or risk:
+[what I am accepting]
+
+Next action:
+[what I will do next]
+
+Review date:
+[when to revisit]</div>
+</div>
+
+<div class="section">
+    <div class="step-badge">Step 3</div>
+    <h2>Use the "Future Me" Test</h2>
+    <p>A good decision log entry should help you six weeks from now.</p>
+    <table class="styled-table">
+        <tr><th>Weak Entry</th><th>Strong Entry</th></tr>
+        <tr><td>Chose the new offer</td><td>Chose the new offer because it has clearer buyer pain and faster proof</td></tr>
+        <tr><td>Going with tool A</td><td>Going with tool A for 30 days because setup is faster, even though tool B may scale better</td></tr>
+        <tr><td>Pausing project</td><td>Pausing project until Friday because two client tasks have higher cash impact</td></tr>
+        <tr><td>Need to follow up</td><td>Follow up Thursday with a simple yes/no ask because the last reply was positive but vague</td></tr>
+    </table>
+</div>
+
+<div class="section">
+    <div class="step-badge">Step 4</div>
+    <h2>Ask Your Agent to Challenge the Decision</h2>
+    <p>Before you save a big decision, make the agent pressure-test it.</p>
+
+    <div class="prompt-block"><button class="copy-btn">Copy</button>Challenge this decision before I save it.
+
+Tell me:
+1. The strongest reason this decision is right
+2. The strongest reason it might be wrong
+3. What information is missing
+4. What early signal would tell me to change course
+5. The smallest next step that keeps risk low
+
+Then write the final decision log entry.</div>
+</div>
+
+<div class="section">
+    <h2>What's Happening Behind the Scenes</h2>
+    <p>You are teaching your agent how you make decisions. Over time, this helps it spot patterns: where you move fast, where you overthink, and where you need better data.</p>
+    <div class="callout"><strong>Safety note:</strong> Your agent can help you think. You still own the decision.</div>
+</div>
+
+<div class="section">
+    <div class="step-badge">Step 5</div>
+    <h2>Your Assignment</h2>
+    <div class="callout">
+        <strong>Your to-do list:</strong><br>
+        1. Create the Decision Log format<br>
+        2. Log one real decision<br>
+        3. Ask your agent to challenge it<br>
+        4. Save the final entry<br>
+        5. Set a review date
+    </div>
+</div>
+
+<div class="section">
+    <h2>The Bigger Picture</h2>
+    <p>A decision log gives your agent a practical memory of your strategy, not just your preferences.</p>
+    <div class="callout"><strong>The real takeaway:</strong> Capturing the why is what makes a decision useful later.</div>
+    <p>Coming up next: you will build a simple expense notes habit so money details stop getting lost.</p>
+</div>
+
+<div class="bottom-nav">
+    <button class="btn btn-secondary" onclick="openLesson(9)">&larr; Lesson 9</button>
+    <div style="display:flex; gap:10px; align-items:center;">
+        <button class="btn btn-success" id="completeBtn" onclick="completeCurrentLesson()">Mark Complete</button>
+        <button class="btn btn-primary" onclick="openLesson(11)">Lesson 11 &rarr;</button>
+    </div>
+</div>

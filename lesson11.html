@@ -1,0 +1,136 @@
+<!-- Lesson 11: Expense Notes (partial, loaded into index.html) -->
+
+<div class="lesson-header">
+    <div class="lesson-number">Lesson 11</div>
+    <div class="lesson-title">Expense Notes</div>
+    <div class="lesson-subtitle">Capture spending in plain English before details disappear</div>
+</div>
+
+<div class="section">
+    <h2>The Problem With Money Details</h2>
+    <p>Receipts, subscriptions, tools, mileage, supplies, meals, trial accounts, client purchases. The spending happens fast. The notes do not.</p>
+    <p>You do not need a full accounting system today. You need a simple habit for capturing context while it is fresh.</p>
+    <p>Today you are building an <strong>Expense Notes</strong> workflow with your agent.</p>
+</div>
+
+<div class="section">
+    <h2>The Tool You Are Building</h2>
+    <p>This is a plain-English capture tool. It helps you remember what you bought, why you bought it, and what category it likely belongs in.</p>
+    <ol>
+        <li><strong>Amount</strong> -- what was spent</li>
+        <li><strong>Vendor</strong> -- where it went</li>
+        <li><strong>Purpose</strong> -- why it happened</li>
+        <li><strong>Category</strong> -- suggested bucket</li>
+        <li><strong>Follow-up</strong> -- cancel, reimburse, attach receipt, review later</li>
+    </ol>
+    <div class="callout"><strong>Important:</strong> This is not tax or legal advice. It is a capture habit so you have cleaner records to review with the right professional if needed.</div>
+</div>
+
+<div class="section">
+    <div class="step-badge">Step 1</div>
+    <h2>Create Your Expense Capture Prompt</h2>
+    <p>Copy this into your agent.</p>
+
+    <div class="prompt-block"><button class="copy-btn">Copy</button>I want to build an Expense Notes workflow.
+
+When I say "capture expense," ask me for:
+1. Amount
+2. Vendor
+3. Date
+4. What it was for
+5. Project, client, or personal use
+6. Whether I have a receipt
+7. Any follow-up needed
+
+Then turn it into a clean expense note with a suggested category and a confidence level.</div>
+</div>
+
+<div class="section">
+    <div class="step-badge">Step 2</div>
+    <h2>Capture One Real Expense</h2>
+    <p>Use a harmless example first. A software subscription, office supply, learning tool, mileage note, or business meal works well.</p>
+
+    <div class="prompt-block"><button class="copy-btn">Copy</button>Capture expense.
+
+Amount: [$]
+Vendor: [vendor]
+Date: [date]
+Purpose: [why I bought it]
+Project or client: [if relevant]
+Receipt: [yes, no, need to find]
+Follow-up needed: [cancel trial, attach receipt, ask for reimbursement, review later, none]
+
+Create a clean expense note and suggest a category.</div>
+</div>
+
+<div class="section">
+    <div class="step-badge">Step 3</div>
+    <h2>Set Your Categories</h2>
+    <p>Start simple. You can refine later.</p>
+    <table class="styled-table">
+        <tr><th>Category</th><th>Examples</th><th>Follow-Up Question</th></tr>
+        <tr><td>Software</td><td>Apps, subscriptions, agent tools</td><td>Is this recurring?</td></tr>
+        <tr><td>Learning</td><td>Courses, books, communities</td><td>What outcome should it support?</td></tr>
+        <tr><td>Sales</td><td>Travel, meals, demos, outreach tools</td><td>Which opportunity does it support?</td></tr>
+        <tr><td>Operations</td><td>Supplies, admin, workspace items</td><td>Should it be repeated or avoided?</td></tr>
+        <tr><td>Client or project</td><td>Purchases tied to a specific job</td><td>Does it need reimbursement or billing?</td></tr>
+    </table>
+</div>
+
+<div class="section">
+    <div class="step-badge">Step 4</div>
+    <h2>Build the Weekly Review</h2>
+    <p>Expense capture becomes valuable when you review it.</p>
+
+    <div class="prompt-block"><button class="copy-btn">Copy</button>At the end of each week, help me review my Expense Notes.
+
+Show me:
+1. Total captured expenses
+2. Recurring subscriptions I should notice
+3. Expenses missing receipts
+4. Expenses tied to a project or client
+5. Anything that needs follow-up
+6. One spending pattern worth paying attention to
+
+Keep it simple and practical.</div>
+</div>
+
+<div class="section">
+    <h2>What's Happening Behind the Scenes</h2>
+    <p>You are not trying to replace accounting software. You are giving your agent a cleaner intake layer.</p>
+    <table class="styled-table">
+        <tr><th>Messy Habit</th><th>Agent-Assisted Habit</th></tr>
+        <tr><td>Receipt sits in a pocket</td><td>Expense note captures purpose immediately</td></tr>
+        <tr><td>Subscription renews unnoticed</td><td>Weekly review flags recurring tools</td></tr>
+        <tr><td>Project cost gets forgotten</td><td>Expense links to project or client</td></tr>
+        <tr><td>You guess later</td><td>You capture context now</td></tr>
+    </table>
+</div>
+
+<div class="section">
+    <div class="step-badge">Step 5</div>
+    <h2>Your Assignment</h2>
+    <div class="callout">
+        <strong>Your to-do list:</strong><br>
+        1. Save the Expense Notes workflow<br>
+        2. Capture one real expense<br>
+        3. Choose a category<br>
+        4. Add a receipt or follow-up status<br>
+        5. Ask for a weekly review format
+    </div>
+</div>
+
+<div class="section">
+    <h2>The Bigger Picture</h2>
+    <p>This lesson adds a practical money layer to your personal operating kit. You are building a habit that makes future reporting, planning, and cleanup easier.</p>
+    <div class="callout"><strong>The real takeaway:</strong> Do not wait until the end of the month to remember why money moved.</div>
+    <p>Coming up next: you will turn rough marketing ideas into useful campaign starters.</p>
+</div>
+
+<div class="bottom-nav">
+    <button class="btn btn-secondary" onclick="openLesson(10)">&larr; Lesson 10</button>
+    <div style="display:flex; gap:10px; align-items:center;">
+        <button class="btn btn-success" id="completeBtn" onclick="completeCurrentLesson()">Mark Complete</button>
+        <button class="btn btn-primary" onclick="goHome()">Back to Map &rarr;</button>
+    </div>
+</div>
